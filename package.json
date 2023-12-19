@@ -21,6 +21,7 @@
     "echarts": "^5.4.3",
     "lodash-es": "^4.17.21",
     "nprogress": "^0.2.0",
+    "pdfjs-dist": "^3.11.174",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.0",
     "resize-detector": "^0.3.0",
@@ -28,6 +29,7 @@
     "vant": "^4.7.3",
     "vconsole": "^3.15.1",
     "vue": "^3.3.8",
+    "vue-pdf-embed": "^1.2.1",
     "vue-router": "^4.2.5",
     "vue-router-better-scroller": "^0.0.0"
   },

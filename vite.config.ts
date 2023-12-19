@@ -1,22 +1,22 @@
 /* eslint-disable node/prefer-global/process */
 import path from 'node:path'
-import { loadEnv } from 'vite'
 import type { ConfigEnv, UserConfig } from 'vite'
+import { loadEnv } from 'vite'
 
 import { visualizer } from 'rollup-plugin-visualizer'
-import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VantResolver } from 'unplugin-vue-components/resolvers'
+import Components from 'unplugin-vue-components/vite'
 
-import vue from '@vitejs/plugin-vue'
 import legacy from '@vitejs/plugin-legacy'
+import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
-import viewport from 'postcss-mobile-forever'
 import autoprefixer from 'autoprefixer'
+import viewport from 'postcss-mobile-forever'
 
-import { viteVConsole } from 'vite-plugin-vconsole'
 import UnoCSS from 'unocss/vite'
+import { viteVConsole } from 'vite-plugin-vconsole'
 import mock from './build/mock/createMockServer'
 
 export default ({ command, mode }: ConfigEnv): UserConfig => {
@@ -94,6 +94,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     },
 
     build: {
+      target: 'esnext',
       cssCodeSplit: false,
       chunkSizeWarningLimit: 2048,
     },

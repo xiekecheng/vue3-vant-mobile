@@ -1,12 +1,13 @@
 // https://router.vuejs.org/zh/
-import { createRouter, createWebHistory } from 'vue-router'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
+import { createRouter, createWebHistory } from 'vue-router'
 
 // 导入路由组件
+import charts from '@/views/charts/index.vue'
 import main from '@/views/index.vue'
 import mock from '@/views/mock/index.vue'
-import charts from '@/views/charts/index.vue'
+import pdf from '@/views/pdf/index.vue'
 import unocss from '@/views/unocss/index.vue'
 
 NProgress.configure({ showSpinner: true, parent: '#app' })
@@ -32,6 +33,11 @@ const routes = [
     path: '/unocss',
     name: 'unocss',
     component: unocss,
+  },
+  {
+    path: '/pdf',
+    name: 'pdf',
+    component: pdf,
   },
 ]
 

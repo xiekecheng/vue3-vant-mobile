@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useStore } from '@/stores'
-import { localStorage } from '@/utils/local-storage'
+import { useStore } from '@/stores';
+import { localStorage } from '@/utils/local-storage';
 
 const store = useStore()
 const themeStore = localStorage.get('theme')
@@ -34,6 +34,8 @@ watch(checked, (val) => {
       <VanCell title="📊 Echarts 演示" to="charts" is-link />
 
       <VanCell title="🪶 Unocss 示例" to="unocss" is-link />
+
+      <VanCell title="🪶 pdf 示例" to="pdf" is-link />
 
       <VanCell center>
         <template #title>
